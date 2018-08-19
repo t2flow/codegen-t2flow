@@ -1,0 +1,4758 @@
+[
+  {
+    "name": "tf.tensor",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "shape", "type": "(number[])", "optional": true },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.scalar",
+    "type": "function",
+    "returnType": "tf.Scalar",
+    "params": [
+      { "name": "value", "type": "(number|boolean)", "optional": false },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tensor1d",
+    "type": "function",
+    "returnType": "tf.Tensor1D",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tensor2d",
+    "type": "function",
+    "returnType": "tf.Tensor2D",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "shape", "type": "([number, number])", "optional": true },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tensor3d",
+    "type": "function",
+    "returnType": "tf.Tensor3D",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "shape",
+        "type": "([number, number, number])",
+        "optional": true
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tensor4d",
+    "type": "function",
+    "returnType": "tf.Tensor4D",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "shape",
+        "type": "([number, number, number, number])",
+        "optional": true
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tensor5d",
+    "type": "function",
+    "returnType": "tf.Tensor5D",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "shape",
+        "type": "([number, number, number, number, number])",
+        "optional": true
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tensor6d",
+    "type": "function",
+    "returnType": "tf.Tensor6D",
+    "params": [
+      {
+        "name": "values",
+        "type": "(TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "shape",
+        "type": "([number, number, number, number, number, number])",
+        "optional": true
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.buffer",
+    "type": "function",
+    "returnType": "tf.TensorBuffer",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      },
+      {
+        "name": "values",
+        "type": "(TypedArray)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.clone",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.eye",
+    "type": "function",
+    "returnType": "tf.Tensor2D",
+    "params": [
+      { "name": "numRows", "type": "(number)", "optional": false },
+      { "name": "numColumns", "type": "(number)", "optional": true },
+      {
+        "name": "batchShape",
+        "type": "([ number ]|[number, number]|[number, number, number]|[number, number, number, number])",
+        "optional": true
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.fill",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      { "name": "value", "type": "(number)", "optional": false },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.fromPixels",
+    "type": "function",
+    "returnType": "tf.Tensor3D",
+    "params": [
+      {
+        "name": "pixels",
+        "type": "(ImageData|HTMLImageElement|HTMLCanvasElement|HTMLVideoElement)",
+        "optional": false
+      },
+      { "name": "numChannels", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.linspace",
+    "type": "function",
+    "returnType": "tf.Tensor1D",
+    "params": [
+      { "name": "start", "type": "(number)", "optional": false },
+      { "name": "stop", "type": "(number)", "optional": false },
+      { "name": "num", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.oneHot",
+    "type": "function",
+    "returnType": "tf.Tensor2D",
+    "params": [
+      {
+        "name": "indices",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "depth", "type": "(number)", "optional": false },
+      { "name": "onValue", "type": "(number)", "optional": true },
+      { "name": "offValue", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.ones",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.onesLike",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.print",
+    "type": "function",
+    "returnType": "void",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      { "name": "verbose", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.range",
+    "type": "function",
+    "returnType": "tf.Tensor1D",
+    "params": [
+      { "name": "start", "type": "(number)", "optional": false },
+      { "name": "stop", "type": "(number)", "optional": false },
+      { "name": "step", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "('float32'|'int32')", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.truncatedNormal",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      { "name": "mean", "type": "(number)", "optional": true },
+      { "name": "stdDev", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "('float32'|'int32')", "optional": true },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.variable",
+    "type": "function",
+    "returnType": "tf.Variable",
+    "params": [
+      {
+        "name": "initialValue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.zeros",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.zerosLike",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.Tensor",
+    "type": "class",
+    "returnType": "tf.Tensor1D",
+    "params": [
+      { "name": "rows", "type": "(number)", "optional": false },
+      { "name": "columns", "type": "(number)", "optional": false },
+      { "name": "rows", "type": "(number)", "optional": false },
+      { "name": "columns", "type": "(number)", "optional": false },
+      { "name": "depth", "type": "(number)", "optional": false },
+      { "name": "rows", "type": "(number)", "optional": false },
+      { "name": "columns", "type": "(number)", "optional": false },
+      { "name": "depth", "type": "(number)", "optional": false },
+      { "name": "depth2", "type": "(number)", "optional": false },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": false
+      },
+      { "name": "verbose", "type": "(boolean)", "optional": true },
+      { "name": "newShape", "type": "(number[])", "optional": false },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true },
+      { "name": "axis", "type": "(number)", "optional": true },
+      { "name": "exclusive", "type": "(boolean)", "optional": true },
+      { "name": "reverse", "type": "(boolean)", "optional": true },
+      { "name": "axis", "type": "(number[])", "optional": true },
+      { "name": "verbose", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "flatten",
+    "type": "method",
+    "returnType": "tf.Tensor1D",
+    "params": null
+  },
+  {
+    "name": "asScalar",
+    "type": "method",
+    "returnType": "tf.Scalar",
+    "params": null
+  },
+  {
+    "name": "as1D",
+    "type": "method",
+    "returnType": "tf.Tensor1D",
+    "params": null
+  },
+  {
+    "name": "as2D",
+    "type": "method",
+    "returnType": "tf.Tensor2D",
+    "params": [
+      { "name": "rows", "type": "(number)", "optional": false },
+      { "name": "columns", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "as3D",
+    "type": "method",
+    "returnType": "tf.Tensor3D",
+    "params": [
+      { "name": "rows", "type": "(number)", "optional": false },
+      { "name": "columns", "type": "(number)", "optional": false },
+      { "name": "depth", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "as4D",
+    "type": "method",
+    "returnType": "tf.Tensor4D",
+    "params": [
+      { "name": "rows", "type": "(number)", "optional": false },
+      { "name": "columns", "type": "(number)", "optional": false },
+      { "name": "depth", "type": "(number)", "optional": false },
+      { "name": "depth2", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "asType",
+    "type": "method",
+    "returnType": "this",
+    "params": [
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "buffer",
+    "type": "method",
+    "returnType": "tf.TensorBuffer",
+    "params": null
+  },
+  { "name": "data", "type": "method", "returnType": "Promise", "params": null },
+  {
+    "name": "dataSync",
+    "type": "method",
+    "returnType": "TypedArray",
+    "params": null
+  },
+  { "name": "dispose", "type": "method", "returnType": "void", "params": null },
+  { "name": "toFloat", "type": "method", "returnType": "this", "params": null },
+  { "name": "toInt", "type": "method", "returnType": "this", "params": null },
+  { "name": "toBool", "type": "method", "returnType": "this", "params": null },
+  {
+    "name": "print",
+    "type": "method",
+    "returnType": "void",
+    "params": [{ "name": "verbose", "type": "(boolean)", "optional": true }]
+  },
+  {
+    "name": "reshape",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [{ "name": "newShape", "type": "(number[])", "optional": false }]
+  },
+  {
+    "name": "reshapeAs",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "expandDims",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [{ "name": "axis", "type": "(number)", "optional": true }]
+  },
+  {
+    "name": "cumsum",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "axis", "type": "(number)", "optional": true },
+      { "name": "exclusive", "type": "(boolean)", "optional": true },
+      { "name": "reverse", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "squeeze",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [{ "name": "axis", "type": "(number[])", "optional": true }]
+  },
+  {
+    "name": "clone",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": null
+  },
+  {
+    "name": "toString",
+    "type": "method",
+    "returnType": "string",
+    "params": [{ "name": "verbose", "type": "(boolean)", "optional": true }]
+  },
+  {
+    "name": "tf.Variable",
+    "type": "class",
+    "returnType": "void",
+    "params": [
+      {
+        "name": "newValue",
+        "type": "(    tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "assign",
+    "type": "method",
+    "returnType": "void",
+    "params": [
+      {
+        "name": "newValue",
+        "type": "(    tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.TensorBuffer",
+    "type": "class",
+    "returnType": "void",
+    "params": [
+      { "name": "value", "type": "(number)", "optional": false },
+      { "name": "...locs", "type": "(number[])", "optional": false },
+      { "name": "...locs", "type": "(number[])", "optional": false }
+    ]
+  },
+  {
+    "name": "set",
+    "type": "method",
+    "returnType": "void",
+    "params": [
+      { "name": "value", "type": "(number)", "optional": false },
+      { "name": "...locs", "type": "(number[])", "optional": false }
+    ]
+  },
+  {
+    "name": "get",
+    "type": "method",
+    "returnType": "number",
+    "params": [{ "name": "...locs", "type": "(number[])", "optional": false }]
+  },
+  {
+    "name": "toTensor",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": null
+  },
+  {
+    "name": "tf.batchToSpaceND",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "blockShape", "type": "(number[])", "optional": false },
+      { "name": "crops", "type": "(number[][])", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.cast",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.expandDims",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.pad",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "paddings", "type": "(Array)", "optional": false },
+      { "name": "constantValue", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.reshape",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "shape", "type": "(number[])", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.spaceToBatchND",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "blockShape", "type": "(number[])", "optional": false },
+      { "name": "paddings", "type": "(number[][])", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.squeeze",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number[])", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.concat",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "tensors",
+        "type": "(tf.Tensor[]|TypedArray|Array[])",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.gather",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "indices",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.reverse",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.slice",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "begin", "type": "(number|number[])", "optional": false },
+      { "name": "size", "type": "(number|number[])", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.split",
+    "type": "function",
+    "returnType": "tf.Tensor[]",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "numOrSizeSplits",
+        "type": "(number[]|number)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.stack",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "tensors",
+        "type": "(tf.Tensor[]|TypedArray|Array[])",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.tile",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "reps", "type": "(number[])", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.unstack",
+    "type": "function",
+    "returnType": "tf.Tensor[]",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.multinomial",
+    "type": "function",
+    "returnType": "tf.Tensor1D|",
+    "params": [
+      {
+        "name": "logits",
+        "type": "(tf.Tensor1D|tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "numSamples", "type": "(number)", "optional": false },
+      { "name": "seed", "type": "(number)", "optional": true },
+      { "name": "normalized", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.randomNormal",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      { "name": "mean", "type": "(number)", "optional": true },
+      { "name": "stdDev", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "('float32'|'int32')", "optional": true },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.randomUniform",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      { "name": "shape", "type": "(number[])", "optional": false },
+      { "name": "minval", "type": "(number)", "optional": true },
+      { "name": "maxval", "type": "(number)", "optional": true },
+      {
+        "name": "dtype",
+        "type": "('float32'|'int32'|'bool')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.sequential",
+    "type": "function",
+    "returnType": "tf.Sequential",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      {
+        "name": "layers",
+        "type": "(tf.layers.Layer[])",
+        "optional": true
+      },
+      { "name": "name", "type": "(string)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.model",
+    "type": "function",
+    "returnType": "tf.Model",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "inputs",
+        "type": "(tf.SymbolicTensor|tf.SymbolicTensor[])",
+        "optional": false
+      },
+      {
+        "name": "outputs",
+        "type": "(tf.SymbolicTensor|tf.SymbolicTensor[])",
+        "optional": false
+      },
+      { "name": "name", "type": "(string)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.input",
+    "type": "function",
+    "returnType": "tf.SymbolicTensor",
+    "params": [
+      { "name": "config", "type": "(InputConfig)", "optional": false },
+      { "name": "shape", "type": "(number[])", "optional": true },
+      { "name": "batchShape", "type": "(number[])", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "sparse", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.loadModel",
+    "type": "function",
+    "returnType": "Promise",
+    "params": [
+      {
+        "name": "pathOrIOHandler",
+        "type": "(string|io.IOHandler)",
+        "optional": false
+      },
+      { "name": "strict", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.io.copyModel",
+    "type": "function",
+    "returnType": "Promise",
+    "params": [
+      { "name": "sourceURL", "type": "(string)", "optional": false },
+      { "name": "destURL", "type": "(string)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.io.listModels",
+    "type": "function",
+    "returnType": "Promise",
+    "params": null
+  },
+  {
+    "name": "tf.io.moveModel",
+    "type": "function",
+    "returnType": "Promise",
+    "params": [
+      { "name": "sourceURL", "type": "(string)", "optional": false },
+      { "name": "destURL", "type": "(string)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.io.removeModel",
+    "type": "function",
+    "returnType": "Promise",
+    "params": [{ "name": "url", "type": "(string)", "optional": false }]
+  },
+  {
+    "name": "tf.Model",
+    "type": "class",
+    "returnType": "void",
+    "params": [
+      { "name": "lineLength", "type": "(number)", "optional": true },
+      { "name": "positions", "type": "(number[])", "optional": true },
+      {
+        "name": "printFn",
+        "type": "((message?:    tf.any(), ...optionalParams:    tf.any()[]) => void)",
+        "optional": true
+      },
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "optimizer",
+        "type": "(string|    tf.train.Optimizer)",
+        "optional": false
+      },
+      {
+        "name": "loss",
+        "type": "(string|string[]|{[outputName: string]: string}|LossOrMetricFn| LossOrMetricFn[]|{[outputName: string]:    LossOrMetricFn})  ",
+        "optional": false
+      },
+      {
+        "name": "metrics",
+        "type": "(string[]|{[outputName: string]: string})",
+        "optional": true
+      },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "steps", "type": "(number)", "optional": true },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "verbose", "type": "(boolean)", "optional": true },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "epochs", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "callbacks",
+        "type": "(BaseCallback[]|CustomCallbackConfig|CustomCallbackConfig[])",
+        "optional": true
+      },
+      { "name": "validationSplit", "type": "(number)", "optional": true },
+      {
+        "name": "validationData",
+        "type": "([    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[] ]|[    tf.Tensor |    tf.Tensor[],    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[]])",
+        "optional": true
+      },
+      { "name": "shuffle", "type": "(boolean)", "optional": true },
+      {
+        "name": "classWeight",
+        "type": "({[classIndex: string]: number})",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "initialEpoch", "type": "(number)", "optional": true },
+      { "name": "stepsPerEpoch", "type": "(number)", "optional": true },
+      { "name": "validationSteps", "type": "(number)", "optional": true },
+      { "name": "yieldEvery", "type": "(YieldEveryOptions)", "optional": true },
+      {
+        "name": "handlerOrURL",
+        "type": "(io.IOHandler|string)",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "index", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "summary",
+    "type": "method",
+    "returnType": "void",
+    "params": [
+      { "name": "lineLength", "type": "(number)", "optional": true },
+      { "name": "positions", "type": "(number[])", "optional": true },
+      {
+        "name": "printFn",
+        "type": "((message?:    tf.any(), ...optionalParams:    tf.any()[]) => void)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "compile",
+    "type": "method",
+    "returnType": "void",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "optimizer",
+        "type": "(string|    tf.train.Optimizer)",
+        "optional": false
+      },
+      {
+        "name": "loss",
+        "type": "(string|string[]|{[outputName: string]: string}|LossOrMetricFn| LossOrMetricFn[]|{[outputName: string]:    LossOrMetricFn})  ",
+        "optional": false
+      },
+      {
+        "name": "metrics",
+        "type": "(string[]|{[outputName: string]: string})",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "evaluate",
+    "type": "method",
+    "returnType": "tf.Scalar|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "steps", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "predict",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "verbose", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "predictOnBatch",
+    "type": "method",
+    "returnType": "tf.Tensor|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "fit",
+    "type": "method",
+    "returnType": "Promise",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "epochs", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "callbacks",
+        "type": "(BaseCallback[]|CustomCallbackConfig|CustomCallbackConfig[])",
+        "optional": true
+      },
+      { "name": "validationSplit", "type": "(number)", "optional": true },
+      {
+        "name": "validationData",
+        "type": "([    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[] ]|[    tf.Tensor |    tf.Tensor[],    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[]])",
+        "optional": true
+      },
+      { "name": "shuffle", "type": "(boolean)", "optional": true },
+      {
+        "name": "classWeight",
+        "type": "({[classIndex: string]: number})",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "initialEpoch", "type": "(number)", "optional": true },
+      { "name": "stepsPerEpoch", "type": "(number)", "optional": true },
+      { "name": "validationSteps", "type": "(number)", "optional": true },
+      { "name": "yieldEvery", "type": "(YieldEveryOptions)", "optional": true }
+    ]
+  },
+  {
+    "name": "save",
+    "type": "method",
+    "returnType": "Promise",
+    "params": [
+      {
+        "name": "handlerOrURL",
+        "type": "(io.IOHandler|string)",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true }
+    ]
+  },
+  {
+    "name": "getLayer",
+    "type": "method",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "index", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.Sequential",
+    "type": "class",
+    "returnType": "void",
+    "params": [
+      {
+        "name": "layer",
+        "type": "(    tf.layers.Layer)",
+        "optional": false
+      },
+      { "name": "lineLength", "type": "(number)", "optional": true },
+      { "name": "positions", "type": "(number[])", "optional": true },
+      {
+        "name": "printFn",
+        "type": "((message?:    tf.any(), ...optionalParams:    tf.any()[]) => void)",
+        "optional": true
+      },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "steps", "type": "(number)", "optional": true },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "verbose", "type": "(boolean)", "optional": true },
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "epochs", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "callbacks",
+        "type": "(BaseCallback[]|CustomCallbackConfig|CustomCallbackConfig[])",
+        "optional": true
+      },
+      { "name": "validationSplit", "type": "(number)", "optional": true },
+      {
+        "name": "validationData",
+        "type": "([    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[] ]|[    tf.Tensor |    tf.Tensor[],    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[]])",
+        "optional": true
+      },
+      { "name": "shuffle", "type": "(boolean)", "optional": true },
+      {
+        "name": "classWeight",
+        "type": "({[classIndex: string]: number})",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "initialEpoch", "type": "(number)", "optional": true },
+      { "name": "stepsPerEpoch", "type": "(number)", "optional": true },
+      { "name": "validationSteps", "type": "(number)", "optional": true },
+      { "name": "yieldEvery", "type": "(YieldEveryOptions)", "optional": true }
+    ]
+  },
+  {
+    "name": "add",
+    "type": "method",
+    "returnType": "void",
+    "params": [
+      {
+        "name": "layer",
+        "type": "(    tf.layers.Layer)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "summary",
+    "type": "method",
+    "returnType": "void",
+    "params": [
+      { "name": "lineLength", "type": "(number)", "optional": true },
+      { "name": "positions", "type": "(number[])", "optional": true },
+      {
+        "name": "printFn",
+        "type": "((message?:    tf.any(), ...optionalParams:    tf.any()[]) => void)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "evaluate",
+    "type": "method",
+    "returnType": "tf.Scalar|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "steps", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "predict",
+    "type": "method",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[])",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "verbose", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "fit",
+    "type": "method",
+    "returnType": "Promise",
+    "params": [
+      {
+        "name": "x",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      {
+        "name": "y",
+        "type": "(    tf.Tensor|    tf.Tensor[]|{[inputName: string]:    tf.Tensor})",
+        "optional": false
+      },
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "epochs", "type": "(number)", "optional": true },
+      {
+        "name": "verbose",
+        "type": "(ModelLoggingVerbosity)",
+        "optional": true
+      },
+      {
+        "name": "callbacks",
+        "type": "(BaseCallback[]|CustomCallbackConfig|CustomCallbackConfig[])",
+        "optional": true
+      },
+      { "name": "validationSplit", "type": "(number)", "optional": true },
+      {
+        "name": "validationData",
+        "type": "([    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[] ]|[    tf.Tensor |    tf.Tensor[],    tf.Tensor|    tf.Tensor[],    tf.Tensor|    tf.Tensor[]])",
+        "optional": true
+      },
+      { "name": "shuffle", "type": "(boolean)", "optional": true },
+      {
+        "name": "classWeight",
+        "type": "({[classIndex: string]: number})",
+        "optional": true
+      },
+      {
+        "name": "sampleWeight",
+        "type": "(    tf.Tensor)",
+        "optional": true
+      },
+      { "name": "initialEpoch", "type": "(number)", "optional": true },
+      { "name": "stepsPerEpoch", "type": "(number)", "optional": true },
+      { "name": "validationSteps", "type": "(number)", "optional": true },
+      { "name": "yieldEvery", "type": "(YieldEveryOptions)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.SymbolicTensor",
+    "type": "class",
+    "returnType": null,
+    "params": null
+  },
+  {
+    "name": "tf.layers.elu",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "alpha", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.leakyReLU",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "alpha", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.softmax",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.thresholdedReLU",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "theta", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.activation",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "activation",
+        "type": "('elu'|'hardSigmoid'|'linear'|'relu'|'relu6'| 'selu'|'sigmoid'|'softmax'|'softplus'|'softsign'|'tanh'|string)\n                  ",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.dense",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "units", "type": "(number)", "optional": false },
+      {
+        "name": "activation",
+        "type": "('elu'|'hardSigmoid'|'linear'|'relu'|'relu6'| 'selu'|'sigmoid'|'softmax'|'softplus'|'softsign'|'tanh'|string)\n                  ",
+        "optional": true
+      },
+      { "name": "useBias", "type": "(boolean)", "optional": true },
+      {
+        "name": "kernelInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "biasInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      { "name": "inputDim", "type": "(number)", "optional": true },
+      {
+        "name": "kernelConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "biasConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "kernelRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "biasRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "activityRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.dropout",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "rate", "type": "(number)", "optional": false },
+      { "name": "noiseShape", "type": "(number[])", "optional": true },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.embedding",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "inputDim", "type": "(number)", "optional": false },
+      { "name": "outputDim", "type": "(number)", "optional": false },
+      {
+        "name": "embeddingsInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "embeddingsRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "activityRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "embeddingsConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      { "name": "maskZero", "type": "(boolean)", "optional": true },
+      { "name": "inputLength", "type": "(number|number[])", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.flatten",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.permute",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "dims", "type": "(number[])", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.layers.repeatVector",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "n", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.layers.reshape",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "targetShape", "type": "(number[])", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.layers.conv1d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "filters", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.layers.conv2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "filters", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.layers.conv2dTranspose",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "filters", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.layers.cropping2D",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "cropping",
+        "type": "(number|[number, number]|[[number, number], [number, number]])",
+        "optional": false
+      },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.depthwiseConv2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "kernelSize",
+        "type": "(number|[number, number])",
+        "optional": false
+      },
+      { "name": "depthMultiplier", "type": "(number)", "optional": true },
+      {
+        "name": "depthwiseInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "depthwiseConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "depthwiseRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.separableConv2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "depthMultiplier", "type": "(number)", "optional": true },
+      {
+        "name": "depthwiseInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "pointwiseInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "depthwiseRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "pointwiseRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "depthwiseConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "pointwiseConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.upSampling2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "size", "type": "(number[])", "optional": true },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.add",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.average",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.concatenate",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.maximum",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.minimum",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.multiply",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.batchNormalization",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "axis", "type": "(number)", "optional": true },
+      { "name": "momentum", "type": "(number)", "optional": true },
+      { "name": "epsilon", "type": "(number)", "optional": true },
+      { "name": "center", "type": "(boolean)", "optional": true },
+      { "name": "scale", "type": "(boolean)", "optional": true },
+      {
+        "name": "betaInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "gammaInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "movingMeanInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "movingVarianceInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "betaConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "gammaConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "betaRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "gammaRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.averagePooling1d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "poolSize", "type": "(number)", "optional": true },
+      { "name": "strides", "type": "(number)", "optional": true },
+      {
+        "name": "padding",
+        "type": "('valid'|'same'|'causal')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.averagePooling2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "poolSize",
+        "type": "(number|[number, number])",
+        "optional": true
+      },
+      {
+        "name": "strides",
+        "type": "(number|[number, number])",
+        "optional": true
+      },
+      {
+        "name": "padding",
+        "type": "('valid'|'same'|'causal')",
+        "optional": true
+      },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.globalAveragePooling1d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.globalAveragePooling2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.globalMaxPooling1d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true },
+      { "name": "trainable", "type": "(boolean)", "optional": true },
+      { "name": "updatable", "type": "(boolean)", "optional": true },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor[])",
+        "optional": true
+      },
+      { "name": "inputDType", "type": "(DataType)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.globalMaxPooling2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.maxPooling1d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "poolSize", "type": "(number)", "optional": true },
+      { "name": "strides", "type": "(number)", "optional": true },
+      {
+        "name": "padding",
+        "type": "('valid'|'same'|'causal')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.maxPooling2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "poolSize",
+        "type": "(number|[number, number])",
+        "optional": true
+      },
+      {
+        "name": "strides",
+        "type": "(number|[number, number])",
+        "optional": true
+      },
+      {
+        "name": "padding",
+        "type": "('valid'|'same'|'causal')",
+        "optional": true
+      },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.gru",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "recurrentActivation", "type": "(string)", "optional": true },
+      { "name": "implementation", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.gruCell",
+    "type": "function",
+    "returnType": "tf.RNNCell",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "recurrentActivation", "type": "(string)", "optional": true },
+      { "name": "implementation", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.lstm",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "recurrentActivation", "type": "(string)", "optional": true },
+      { "name": "unitForgetBias", "type": "(boolean)", "optional": true },
+      { "name": "implementation", "type": "(1|2)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.lstmCell",
+    "type": "function",
+    "returnType": "tf.RNNCell",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "recurrentActivation",
+        "type": "('elu'|'hardSigmoid'|'linear'|'relu'|'relu6'| 'selu'|'sigmoid'|'softmax'|'softplus'|'softsign'|'tanh'|string)\n                  ",
+        "optional": true
+      },
+      { "name": "unitForgetBias", "type": "(boolean)", "optional": true },
+      { "name": "implementation", "type": "(1|2)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.rnn",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "cell",
+        "type": "(tf.RNNCell|tf.RNNCell[])",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.simpleRNN",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "units", "type": "(number)", "optional": false },
+      {
+        "name": "activation",
+        "type": "('elu'|'hardSigmoid'|'linear'|'relu'|'relu6'| 'selu'|'sigmoid'|'softmax'|'softplus'|'softsign'|'tanh'|string)\n                  ",
+        "optional": true
+      },
+      { "name": "useBias", "type": "(boolean)", "optional": true },
+      {
+        "name": "kernelInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "recurrentInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "biasInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "kernelRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "recurrentRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "biasRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "kernelConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "recurrentConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "biasConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      { "name": "dropout", "type": "(number)", "optional": true },
+      { "name": "recurrentDropout", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.simpleRNNCell",
+    "type": "function",
+    "returnType": "tf.RNNCell",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "units", "type": "(number)", "optional": false },
+      {
+        "name": "activation",
+        "type": "('elu'|'hardSigmoid'|'linear'|'relu'|'relu6'| 'selu'|'sigmoid'|'softmax'|'softplus'|'softsign'|'tanh'|string)\n                  ",
+        "optional": true
+      },
+      { "name": "useBias", "type": "(boolean)", "optional": true },
+      {
+        "name": "kernelInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "recurrentInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "biasInitializer",
+        "type": "('constant'|'glorotNormal'|'glorotUniform'| 'heNormal'|'identity'|'leCunNormal'|'ones'|'orthogonal'|'randomNormal'|'randomUniform'|'truncatedNormal'|'varianceScaling'|'zeros'|string|tf.initializers.Initializer)",
+        "optional": true
+      },
+      {
+        "name": "kernelRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "recurrentRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "biasRegularizer",
+        "type": "('l1l2'|string|Regularizer)",
+        "optional": true
+      },
+      {
+        "name": "kernelConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "recurrentConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      {
+        "name": "biasConstraint",
+        "type": "('maxNorm'|'minMaxNorm'|'nonNeg'|'unitNorm'|string|tf.constraints.Constraint)",
+        "optional": true
+      },
+      { "name": "dropout", "type": "(number)", "optional": true },
+      { "name": "recurrentDropout", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.stackedRNNCells",
+    "type": "function",
+    "returnType": "tf.RNNCell",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "cells",
+        "type": "(tf.RNNCell[])",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.bidirectional",
+    "type": "function",
+    "returnType": "Wrapper",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "layer", "type": "(RNN)", "optional": false },
+      {
+        "name": "mergeMode",
+        "type": "(BidirectionalMergeMode)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.timeDistributed",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      {
+        "name": "layer",
+        "type": "(tf.layers.Layer)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.layers.Layer",
+    "type": "class",
+    "returnType": "tf.Tensor|",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "(    tf.Tensor|    tf.Tensor[]|    tf.SymbolicTensor|    tf.SymbolicTensor[])",
+        "optional": false
+      },
+      { "name": "kwargs", "type": "(Kwargs)", "optional": true }
+    ]
+  },
+  {
+    "name": "apply",
+    "type": "method",
+    "returnType": "tf.Tensor|",
+    "params": [
+      {
+        "name": "inputs",
+        "type": "(    tf.Tensor|    tf.Tensor[]|    tf.SymbolicTensor|    tf.SymbolicTensor[])",
+        "optional": false
+      },
+      { "name": "kwargs", "type": "(Kwargs)", "optional": true }
+    ]
+  },
+  { "name": "tf.RNNCell", "type": "class", "returnType": null, "params": null },
+  {
+    "name": "tf.layers.inputLayer",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "inputShape", "type": "(number[])", "optional": true },
+      { "name": "batchSize", "type": "(number)", "optional": true },
+      { "name": "batchInputShape", "type": "(number[])", "optional": true },
+      { "name": "dtype", "type": "(DataType)", "optional": true },
+      { "name": "sparse", "type": "(boolean)", "optional": true },
+      { "name": "name", "type": "(string)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.layers.zeroPadding2d",
+    "type": "function",
+    "returnType": "tf.layers.Layer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      {
+        "name": "padding",
+        "type": "(number|[number, number]|[[number, number], [number, number]])",
+        "optional": true
+      },
+      {
+        "name": "dataFormat",
+        "type": "('channelsFirst'|'channelsLast')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.add",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.sub",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.mul",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.div",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.addN",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [{ "name": "tensors", "type": "(Array)", "optional": false }]
+  },
+  {
+    "name": "tf.floorDiv",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.maximum",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.minimum",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.mod",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.pow",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "base",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "exp",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.squaredDifference",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.abs",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.acos",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.acosh",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.asin",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.asinh",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.atan",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.atan2",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.atanh",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.ceil",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.clipByValue",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "clipValueMin", "type": "(number)", "optional": false },
+      { "name": "clipValueMax", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.cos",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.cosh",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.elu",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.erf",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.exp",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.expm1",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.floor",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.leakyRelu",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "alpha", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.log",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.log1p",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.logSigmoid",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.neg",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.prelu",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "alpha",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.reciprocal",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.relu",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.round",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.rsqrt",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.selu",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.sigmoid",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.sign",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.sin",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.sinh",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.softplus",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.sqrt",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.square",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.step",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "alpha", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.tan",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.tanh",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.dot",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "t1",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "t2",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.matMul",
+    "type": "function",
+    "returnType": "tf.Tensor2D",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "transposeA", "type": "(boolean)", "optional": true },
+      { "name": "transposeB", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.norm",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "ord", "type": "(number|'euclidean'|'fro')", "optional": true },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.outerProduct",
+    "type": "function",
+    "returnType": "tf.Tensor2D",
+    "params": [
+      {
+        "name": "v1",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "v2",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.transpose",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "perm", "type": "(number[])", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.avgPool",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "filterSize",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      {
+        "name": "strides",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      { "name": "pad", "type": "('valid'|'same'|number)", "optional": false },
+      {
+        "name": "dimRoundingMode",
+        "type": "('floor'|'round'|'ceil')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.conv1d",
+    "type": "function",
+    "returnType": "tf.Tensor2D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor2D|tf.Tensor3D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "filter",
+        "type": "(tf.Tensor3D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "stride", "type": "(number)", "optional": false },
+      { "name": "pad", "type": "('valid'|'same'|number)", "optional": false },
+      { "name": "dataFormat", "type": "('NWC'|'NCW')", "optional": true },
+      { "name": "dilation", "type": "(number)", "optional": true },
+      {
+        "name": "dimRoundingMode",
+        "type": "('floor'|'round'|'ceil')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.conv2d",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "filter",
+        "type": "(tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "strides",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      { "name": "pad", "type": "('valid'|'same'|number)", "optional": false },
+      { "name": "dataFormat", "type": "('NHWC'|'NCHW')", "optional": true },
+      {
+        "name": "dilations",
+        "type": "([number, number]|number)",
+        "optional": true
+      },
+      {
+        "name": "dimRoundingMode",
+        "type": "('floor'|'round'|'ceil')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.conv2dTranspose",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "filter",
+        "type": "(tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "outputShape",
+        "type": "([number, number, number, number]|[number, number, number])",
+        "optional": false
+      },
+      {
+        "name": "strides",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      { "name": "pad", "type": "('valid'|'same'|number)", "optional": false },
+      {
+        "name": "dimRoundingMode",
+        "type": "('floor'|'round'|'ceil')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.depthwiseConv2d",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "filter",
+        "type": "(tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "strides",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      { "name": "pad", "type": "('valid'|'same'|number)", "optional": false },
+      { "name": "dataFormat", "type": "('NHWC'|'NCHW')", "optional": true },
+      {
+        "name": "dilations",
+        "type": "([number, number]|number)",
+        "optional": true
+      },
+      {
+        "name": "dimRoundingMode",
+        "type": "('floor'|'round'|'ceil')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.maxPool",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "filterSize",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      {
+        "name": "strides",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      { "name": "pad", "type": "('valid'|'same'|number)", "optional": false },
+      {
+        "name": "dimRoundingMode",
+        "type": "('floor'|'round'|'ceil')",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.separableConv2d",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "depthwiseFilter",
+        "type": "(tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "pointwiseFilter",
+        "type": "(tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "strides",
+        "type": "([number, number]|number)",
+        "optional": false
+      },
+      { "name": "pad", "type": "('valid'|'same')", "optional": false },
+      {
+        "name": "dilation",
+        "type": "([number, number]|number)",
+        "optional": true
+      },
+      { "name": "dataFormat", "type": "('NHWC'|'NCHW')", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.all",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.any",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.argMax",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.argMin",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.logSumExp",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.max",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.mean",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.min",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.sum",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.batchNormalization",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "mean",
+        "type": "(tf.Tensor|tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "variance",
+        "type": "(tf.Tensor|tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "varianceEpsilon", "type": "(number)", "optional": true },
+      {
+        "name": "scale",
+        "type": "(tf.Tensor|tf.Tensor1D|TypedArray|Array)",
+        "optional": true
+      },
+      {
+        "name": "offset",
+        "type": "(tf.Tensor|tf.Tensor1D|TypedArray|Array)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.localResponseNormalization",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "depthRadius", "type": "(number)", "optional": true },
+      { "name": "bias", "type": "(number)", "optional": true },
+      { "name": "alpha", "type": "(number)", "optional": true },
+      { "name": "beta", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.moments",
+    "type": "function",
+    "returnType": "{mean:",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number|number[])", "optional": true },
+      { "name": "keepDims", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.softmax",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "logits",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "dim", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.image.nonMaxSuppression",
+    "type": "function",
+    "returnType": "tf.Tensor1D",
+    "params": [
+      {
+        "name": "boxes",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "scores",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "maxOutputSize", "type": "(number)", "optional": false },
+      { "name": "iouThreshold", "type": "(number)", "optional": true },
+      {
+        "name": "scoreThreshold",
+        "type": "(tf.any())",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.image.resizeBilinear",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "images",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "size", "type": "([number, number])", "optional": false },
+      { "name": "alignCorners", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.image.resizeNearestNeighbor",
+    "type": "function",
+    "returnType": "tf.Tensor3D|",
+    "params": [
+      {
+        "name": "images",
+        "type": "(tf.Tensor3D|tf.Tensor4D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "size", "type": "([number, number])", "optional": false },
+      { "name": "alignCorners", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.basicLSTMCell",
+    "type": "function",
+    "returnType": "[",
+    "params": [
+      {
+        "name": "forgetBias",
+        "type": "(tf.Scalar|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "lstmKernel",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "lstmBias",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "data",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "c",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "h",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.multiRNNCell",
+    "type": "function",
+    "returnType": "[",
+    "params": [
+      {
+        "name": "lstmCells",
+        "type": "((data:tf.Tensor2D, c:tf.Tensor2D, h:tf.Tensor2D): [tf.Tensor2D,tf.Tensor2D][])",
+        "optional": false
+      },
+      {
+        "name": "data",
+        "type": "(tf.Tensor2D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "c",
+        "type": "(tf.Tensor2D[]|TypedArray|Array[])",
+        "optional": false
+      },
+      {
+        "name": "h",
+        "type": "(tf.Tensor2D[]|TypedArray|Array[])",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.equal",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.greater",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.greaterEqual",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.less",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.lessEqual",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.logicalAnd",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.logicalNot",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.logicalOr",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.logicalXor",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.notEqual",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.where",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "condition",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "a",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "b",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.cumsum",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": true },
+      { "name": "exclusive", "type": "(boolean)", "optional": true },
+      { "name": "reverse", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.unsortedSegmentSum",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "segmentIds",
+        "type": "(tf.Tensor1D|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "numSegments", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.movingAverage",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "v",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "decay",
+        "type": "(number|tf.Scalar)",
+        "optional": false
+      },
+      {
+        "name": "step",
+        "type": "(number|tf.Scalar)",
+        "optional": true
+      },
+      { "name": "zeroDebias", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.stridedSlice",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "begin", "type": "(number[])", "optional": false },
+      { "name": "end", "type": "(number[])", "optional": false },
+      { "name": "strides", "type": "(number[])", "optional": false },
+      { "name": "beginMask", "type": "(number)", "optional": true },
+      { "name": "endMask", "type": "(number)", "optional": true },
+      { "name": "ellipsisMask", "type": "(number)", "optional": true },
+      { "name": "newAxisMask", "type": "(number)", "optional": true },
+      { "name": "shrinkAxisMask", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.topk",
+    "type": "function",
+    "returnType": "{values:",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "k", "type": "(number)", "optional": true },
+      { "name": "sorted", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.gramSchmidt",
+    "type": "function",
+    "returnType": "tf.Tensor1D[]|",
+    "params": [
+      {
+        "name": "xs",
+        "type": "(tf.Tensor1D[]|tf.Tensor2D)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.qr",
+    "type": "function",
+    "returnType": "[",
+    "params": [
+      {
+        "name": "x",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      { "name": "fullMatrices", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.grad",
+    "type": "function",
+    "returnType": "(",
+    "params": [
+      {
+        "name": "f",
+        "type": "((x:tf.Tensor) =>tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.grads",
+    "type": "function",
+    "returnType": "(",
+    "params": [
+      {
+        "name": "f",
+        "type": "((...args:tf.Tensor[]) =>tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.customGrad",
+    "type": "function",
+    "returnType": "(...args:",
+    "params": [
+      {
+        "name": "f",
+        "type": "((a:tf.Tensor, b:tf.Tensor,...) => { value:tf.Tensor, * gradFunc: (dy:tf.Tensor) =>tf.Tensor |tf.Tensor[] * })",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.valueAndGrad",
+    "type": "function",
+    "returnType": "(",
+    "params": [
+      {
+        "name": "f",
+        "type": "((x:tf.Tensor) =>tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.valueAndGrads",
+    "type": "function",
+    "returnType": "(",
+    "params": [
+      {
+        "name": "f",
+        "type": "((...args:tf.Tensor[]) =>tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.variableGrads",
+    "type": "function",
+    "returnType": "{value:",
+    "params": [
+      {
+        "name": "f",
+        "type": "(() =>tf.Scalar)",
+        "optional": false
+      },
+      {
+        "name": "varList",
+        "type": "(tf.Variable[])",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.train.sgd",
+    "type": "function",
+    "returnType": "tf.SGDOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.train.momentum",
+    "type": "function",
+    "returnType": "tf.MomentumOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": false },
+      { "name": "momentum", "type": "(number)", "optional": false },
+      { "name": "useNesterov", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.train.adagrad",
+    "type": "function",
+    "returnType": "tf.AdagradOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": false },
+      {
+        "name": "initialAccumulatorValue",
+        "type": "(number)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.train.adadelta",
+    "type": "function",
+    "returnType": "tf.AdadeltaOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": true },
+      { "name": "rho", "type": "(number)", "optional": true },
+      { "name": "epsilon", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.train.adam",
+    "type": "function",
+    "returnType": "AdamOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": true },
+      { "name": "beta1", "type": "(number)", "optional": true },
+      { "name": "beta2", "type": "(number)", "optional": true },
+      { "name": "epsilon", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.train.adamax",
+    "type": "function",
+    "returnType": "AdamaxOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": true },
+      { "name": "beta1", "type": "(number)", "optional": true },
+      { "name": "beta2", "type": "(number)", "optional": true },
+      { "name": "epsilon", "type": "(number)", "optional": true },
+      { "name": "decay", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.train.rmsprop",
+    "type": "function",
+    "returnType": "tf.RMSPropOptimizer",
+    "params": [
+      { "name": "learningRate", "type": "(number)", "optional": false },
+      { "name": "decay", "type": "(number)", "optional": true },
+      { "name": "momentum", "type": "(number)", "optional": true },
+      { "name": "epsilon", "type": "(number)", "optional": true },
+      { "name": "centered", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.absoluteDifference",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "labels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "predictions",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.computeWeightedLoss",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "losses",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.cosineDistance",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "labels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "predictions",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      { "name": "axis", "type": "(number)", "optional": false },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.hingeLoss",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "labels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "predictions",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.huberLoss",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "labels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "predictions",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "delta", "type": "(number)", "optional": true },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.logLoss",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "labels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "predictions",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "epsilon", "type": "(number)", "optional": true },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.meanSquaredError",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "labels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "predictions",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.sigmoidCrossEntropy",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "multiClassLabels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "logits",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "labelSmoothing", "type": "(number)", "optional": true },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.losses.softmaxCrossEntropy",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "onehotLabels",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "logits",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "weights",
+        "type": "(tf.Tensor|TypedArray|Array)",
+        "optional": true
+      },
+      { "name": "labelSmoothing", "type": "(number)", "optional": true },
+      { "name": "reduction", "type": "(Reduction)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.train.Optimizer",
+    "type": "class",
+    "returnType": "tf.Scalar",
+    "params": [
+      {
+        "name": "f",
+        "type": "(() =>    tf.Scalar)",
+        "optional": false
+      },
+      { "name": "returnCost", "type": "(boolean)", "optional": true },
+      {
+        "name": "varList",
+        "type": "(    tf.Variable[])",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "minimize",
+    "type": "method",
+    "returnType": "tf.Scalar",
+    "params": [
+      {
+        "name": "f",
+        "type": "(() =>    tf.Scalar)",
+        "optional": false
+      },
+      { "name": "returnCost", "type": "(boolean)", "optional": true },
+      {
+        "name": "varList",
+        "type": "(    tf.Variable[])",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.tidy",
+    "type": "function",
+    "returnType": "void|number|string|",
+    "params": [
+      { "name": "nameOrFn", "type": "(string|Function)", "optional": false },
+      { "name": "fn", "type": "(Function)", "optional": true },
+      { "name": "gradMode", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.dispose",
+    "type": "function",
+    "returnType": "void",
+    "params": [
+      {
+        "name": "container",
+        "type": "(void|number|string|tf.Tensor|tf.Tensor[]|{[key: string]:tf.Tensor|number|string})",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.keep",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "result",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.memory",
+    "type": "function",
+    "returnType": "MemoryInfo",
+    "params": null
+  },
+  {
+    "name": "tf.time",
+    "type": "function",
+    "returnType": "Promise",
+    "params": [{ "name": "f", "type": "(() => void)", "optional": false }]
+  },
+  {
+    "name": "tf.nextFrame",
+    "type": "function",
+    "returnType": "Promise",
+    "params": null
+  },
+  {
+    "name": "tf.disposeVariables",
+    "type": "function",
+    "returnType": "void",
+    "params": null
+  },
+  {
+    "name": "tf.getBackend",
+    "type": "function",
+    "returnType": "string",
+    "params": null
+  },
+  {
+    "name": "tf.setBackend",
+    "type": "function",
+    "returnType": "void",
+    "params": [
+      { "name": "backendName", "type": "(string)", "optional": false },
+      { "name": "safeMode", "type": "(boolean)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.constraints.Constraint",
+    "type": "class",
+    "returnType": null,
+    "params": null
+  },
+  {
+    "name": "tf.constraints.maxNorm",
+    "type": "function",
+    "returnType": "tf.constraints.Constraint",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "maxValue", "type": "(number)", "optional": true },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.constraints.minMaxNorm",
+    "type": "function",
+    "returnType": "tf.constraints.Constraint",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "minValue", "type": "(number)", "optional": true },
+      { "name": "maxValue", "type": "(number)", "optional": true },
+      { "name": "axis", "type": "(number)", "optional": true },
+      { "name": "rate", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.constraints.nonNeg",
+    "type": "function",
+    "returnType": "tf.constraints.Constraint",
+    "params": null
+  },
+  {
+    "name": "tf.constraints.unitNorm",
+    "type": "function",
+    "returnType": "tf.constraints.Constraint",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "axis", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.Initializer",
+    "type": "class",
+    "returnType": null,
+    "params": null
+  },
+  {
+    "name": "tf.initializers.constant",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "value", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.initializers.glorotNormal",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.glorotUniform",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.heNormal",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.identity",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "gain", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.leCunNormal",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.ones",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": null
+  },
+  {
+    "name": "tf.initializers.orthogonal",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "gain", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.randomNormal",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "mean", "type": "(number)", "optional": true },
+      { "name": "stddev", "type": "(number)", "optional": true },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.randomUniform",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "minval", "type": "(number)", "optional": true },
+      { "name": "maxval", "type": "(number)", "optional": true },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.truncatedNormal",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "mean", "type": "(number)", "optional": true },
+      { "name": "stddev", "type": "(number)", "optional": true },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.varianceScaling",
+    "type": "function",
+    "returnType": "tf.initializers.Initializer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": false },
+      { "name": "scale", "type": "(number)", "optional": false },
+      {
+        "name": "mode",
+        "type": "('fanIn'|'fanOut'|'fanAvg')",
+        "optional": false
+      },
+      {
+        "name": "distribution",
+        "type": "('normal'|'uniform')",
+        "optional": false
+      },
+      { "name": "seed", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.initializers.zeros",
+    "type": "function",
+    "returnType": "Zeros",
+    "params": null
+  },
+  {
+    "name": "tf.regularizers.L1L2",
+    "type": "class",
+    "returnType": null,
+    "params": null
+  },
+  {
+    "name": "tf.regularizers.l1",
+    "type": "function",
+    "returnType": "Regularizer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "l1", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.regularizers.l1l2",
+    "type": "function",
+    "returnType": "Regularizer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "l1", "type": "(number)", "optional": true },
+      { "name": "l2", "type": "(number)", "optional": true }
+    ]
+  },
+  {
+    "name": "tf.regularizers.l2",
+    "type": "function",
+    "returnType": "Regularizer",
+    "params": [
+      { "name": "config", "type": "(Object)", "optional": true },
+      { "name": "l2", "type": "(number)", "optional": false }
+    ]
+  },
+  {
+    "name": "tf.toPixels",
+    "type": "function",
+    "returnType": "Promise",
+    "params": [
+      {
+        "name": "img",
+        "type": "(tf.Tensor2D|tf.Tensor3D|TypedArray|Array)",
+        "optional": false
+      },
+      {
+        "name": "canvas",
+        "type": "(HTMLCanvasElement)",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.binaryAccuracy",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.binaryCrossentropy",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.categoricalAccuracy",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.categoricalCrossentropy",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.cosineProximity",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.meanAbsoluteError",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.meanAbsolutePercentageError",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  },
+  {
+    "name": "tf.metrics.meanSquaredError",
+    "type": "function",
+    "returnType": "tf.Tensor",
+    "params": [
+      {
+        "name": "yTrue",
+        "type": "(tf.Tensor)",
+        "optional": false
+      },
+      {
+        "name": "yPred",
+        "type": "(tf.Tensor)",
+        "optional": false
+      }
+    ]
+  }
+]
